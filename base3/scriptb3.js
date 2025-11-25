@@ -133,11 +133,27 @@ console.log(n11=0, "C'est terminé !");
 
 // EXO 13 Trouver le plus grand nombre
 
-const n13 = [12, 56, 35, 29, 22, 2020]
+const n13 = [12124, 56, 35, 2956, 22, 2020];
 
-for (let index = 0; index < demo.length; index++) {
+let max = n13[0];
 
+for (let i=1; i<n13.length;i++) {
+    if (n13[i] > max) {
+        max = n13[i];
+    }
 }
+
+console.log(max);
+
+// for (let index = 0; index < n13.length; index++) {
+// console.log(n13[index]);
+// }
+
+// for (let index = 0; index < n13.length; index++) {
+// n13[index] = n13[index] + 1;
+// }
+
+// console.log(n13)
 
 // if(demo[0]>demo[1];)
 

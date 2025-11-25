@@ -80,22 +80,19 @@ for (let age=0; age<=20;age=age+2) {
 
 // EX 09 : pair ou impair
 
-const x = Math.floor(Math.random() * 10);
-let found = false
-let a;
-let b;
-let c;
+// const x = Math.floor(Math.random() * 10);
+// let found = false
+// let a;
+// let b;
+// let c;
 
-console.log(x);
-while (found === false) {
-    if (x % 2 === 0) {
-        console.log(x % 2 === 0)
-    }
+// console.log(x);
+// while (found === false) {
+//     if (x % 2 === 0) {
+//         console.log(x % 2 === 0)
+//     }
 
-}
-
-
-
+// }
 
 // while (x<= 20) {
 //     if (x % 2 === 0) {
@@ -106,5 +103,12 @@ while (found === false) {
 // x++;
 // }
 
+let n9 = Math.floor(Math.random() * 10);
+
+if(n9 % 2 === 0) {
+    console.log(n9 + " ce nombre est pair");
+} else {
+    console.log(n9 + " ce nombre est impair")
+}
 
 
