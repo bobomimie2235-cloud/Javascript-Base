@@ -15,11 +15,11 @@ console.log(somme, a * b)
 
 // EX 03 : Conditions de Base
 
-// let nombre = prompt ("choisir un nombre", 100);
+// let n3 = prompt ("choisir un nombre", 100);
 
-// if (nombre > 10) {
+// if (n3 > 10) {
 //     console.log("Plus grand que 10")
-// } else if (nombre <= 10) {
+// } else if (n3 <= 10) {
 //     console.log("Plus petit ou égal à 10")
 // } else {
 //     console.log("Mauvais nombre")
@@ -27,9 +27,9 @@ console.log(somme, a * b)
 
 // EX 04 : Pair ou impair
 
-// let nombreEX4 = 11;
+// let n4 = 11;
 
-// if (nombreEX4 % 2 === 0) {
+// if (n4 % 2 === 0) {
 //     console.log("Ce nombre est pair")
 // } else {
 //     console.log("Ce nombre est impair")
@@ -37,11 +37,11 @@ console.log(somme, a * b)
 
 // EX 05 : Vérification âge
 
-// let ageEX5 = prompt ("quel age as-tu ?", 100);
+// let age5 = prompt ("quel age as-tu ?", 100);
 
-// if (ageEX5 < 18) {
+// if (age5 < 18) {
 //     console.log("Tu es mineur")
-// } else if (ageEX5 <=65) {
+// } else if (age5 <=65) {
 //     console.log("tu es adulte")
 // } else {
 //     console.log("tu es senior")

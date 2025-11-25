@@ -144,16 +144,16 @@ function tirageAleatoire(min, max) {
             break;
         }
 
-// len >= 3 : verifie que s'il y a 3 nombres
-// tirages[len - 3] : avant dernier nombre en partant de la finally
-// % 2 === 0 : nombre pair
-// % 2 !== 0 : nombre impair
-// Donc : si les 3 derniers nombres sont pair, immpair et impair alors break (sortir de la boucle)
+        // len >= 3 : verifie que s'il y a 3 nombres
+        // tirages[len - 3] : avant dernier nombre en partant de la finally
+        // % 2 === 0 : nombre pair
+        // % 2 !== 0 : nombre impair
+        // Donc : si les 3 derniers nombres sont pair, immpair et impair alors break (sortir de la boucle)
 
     }
     return tirages;
 
-// return : retourner les tirages, soit renvoie la liste complète jusqu'à obtention de la condition while
+    // return : retourner les tirages, soit renvoie la liste complète jusqu'à obtention de la condition while
 
 }
 
@@ -169,19 +169,68 @@ console.log(tirageAleatoire(1, 100));
 
 // EXO 10 : tirages aléatoires / Compter le nombre de tirage pour obtenir condition / Arrêter tirage / Afficher nombre de coups
 
-// Script avec for :
+// Script avec while tant que la condition:
 
-let n10 = prompt("choisir un nombre de 3 chiffres ?", 100)
+let n10 = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
+
+function n10Aleatoire(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function tirage10Aleatoire(min, max) {
+    const tirages10 = [];
+
+    while (true) {
+        const n = n10Aleatoire(min, max);
+        tirages10.push(n);
+
+        if (n === n10) 
+            {
+            break;
+        }
+
+    }
+    return tirages10;
+}
+
+console.log(tirage10Aleatoire(1, 999));
+
+// Script avec FOR jusqu'à ce que la condition:
+
+let n10for = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
+
+function n10A(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function t10A(min, max) {
+    const t10 = [];
+
+    let tirage;
+
+    do {
+        tirage = n10A(min, max);
+        console.log(tirage);
+        t10.push(tirage);
+    } while (tirage !== n10for);
+
+    return t10;
+}
+
+console.log(t10A(1, 999));
 
 
+// EXO 11 DATE et HEURE
 
+const maintenant = new Date();
 
+// Format de la date : jj/mm/aaaa
+const date = `${maintenant.getDate().toString().padStart(2,'0')}/${(maintenant.getMonth()+1).toString().padStart(2,'0')}/${maintenant.getFullYear()}`;
 
+// Format de l'heure : hh:mm:ss
+const heure1 = `${maintenant.getHours().toString().padStart(2,'0')}:${maintenant.getMinutes().toString().padStart(2,'0')}:${maintenant.getSeconds().toString().padStart(2,'0')}`;
 
-
-
-
-
+console.log(`Nous sommes le ${date} et il est ${heure1}`);
 
 // COURS SUR LES FONCTIONS ET RETURN
 
