@@ -173,7 +173,7 @@ console.log(factorielle(6));
 // Version récursive
 
 function factorielle(n) {
-    if (n ===0) return 1;
+    if (n === 0) return 1;
     return n * factorielle(n-1);
 }
 
@@ -181,3 +181,28 @@ console.log(factorielle(4));
 
 // EXO 10 : Verifier si un tableau est trié en ordre croissant
 
+function estTrie(tableau) {
+for (let i = 0; i < tableau.length - 1; i++) {
+    if (tableau[i] > tableau[i + 1]) {
+        return false;
+    }
+}
+return true;
+
+}
+
+console.log(estTrie([1, 2, 3, 4]));
+console.log(estTrie([5, 2, 6, 4]));
+console.log(estTrie(["soleil", "lune", "arbre", "zen"]));
+console.log(estTrie(["Arbre", "Balançoire", "cadeau"]));
+
+// avec la fonction EVERY
+
+function estTrie2(tableau) {
+    return tableau.every((val, i) => i === 0 || tableau[i - 1] <= val);
+}
+
+console.log(estTrie2([1, 2, 3, 4]));
+console.log(estTrie2([5, 2, 6, 4]));
+console.log(estTrie2(["soleil", "lune", "arbre", "zen"]));
+console.log(estTrie2(["Arbre", "Balançoire", "cadeau"]));
