@@ -105,7 +105,7 @@ console.log("somme des nombres de 1 à 100 :", somme8);
 
 // EXO 10 Liste des nombres pairs
 
-for(let n10=2;n10<=50;n10=n10+2) {
+for(let n10=2;n10<=50;n10+2) {
     console.log(n10);
 }
 

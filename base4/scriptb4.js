@@ -6,6 +6,18 @@ for(let index =0; index < n1.length; index++) {
     console.log(n1[index]);
 }
 
+// EXO 1 : déclarer un tableau
+
+// const nombres = [1, 2, 3, 4, 5];
+
+// for(let i = 0;i < nombres.length; i++) {
+// console.log(nombres[i])
+// }
+
+// for(const element of nombres) {
+//     console.log(element)
+// }
+
 // EXO 2 : Calculer la somme des elements d'un tableau
 
 const n2 = [10, 22, 33, 44, 55];
@@ -27,6 +39,19 @@ console.log(total);
 for(const el of n2) {
     console.log(el)
 }
+
+// EXO 2 : calculer la somme des éléments d'un tableau
+
+// function sommeTableau(tableau) {
+//     let result = 0;
+
+//     for(const nombre of tableau) {
+//         result += nombre;
+//     }
+//     return result;
+//     }
+
+// console.log(sommeTableau([1, 2, 3, 4, 5]));
 
 // EXO 3 : Trouver le mot le plus long dans un tableau
 
@@ -71,6 +96,26 @@ console.log(inverserChaine("stade"));
 //     console.log(tableau4[i]);
 // }
 
+// Exercice 4  Inverser une chaîne de caractères
+//  Écrivez une fonction 
+// inverserChaine(chaine) qui prend une chaîne de caractères 
+// et retourne la chaîne inversée en utilisant une boucle.
+
+function inverserChaine(chaine) {
+
+    let result = "";
+
+    for (let i = chaine.length - 1; i >= 0; i--) {
+        console.log(chaine[i]);
+        result = result + chaine[i];
+    }
+    return result;
+}
+
+// const test = inverserChaine("framboise");
+
+console.log(inverserChaine("framboise"));
+
 // EXO 5 : Compter le nombre de voyelle dans une chaine
 
 function compterVoyelles(chaine5) {
@@ -86,6 +131,44 @@ function compterVoyelles(chaine5) {
 }
 
 console.log(compterVoyelles("Saperlotte Informatique"));
+
+// Exercice 5  Compter le nombre de voyelles dans une chaîne
+//  Créez une fonction 
+// compterVoyelles(chaine) qui retourne le nombre de voyelles 
+// dans une chaîne de caractères.
+
+function compterVoyelles1(chaine) {
+    const voyelles = "aeiouyAEIOUY";
+    let result = "";
+    
+    for (let letter of chaine) {
+        if (voyelles.includes(letter)) {
+            result = result + letter;
+        }
+    }
+    return result;
+}
+
+let test = compterVoyelles1("soleil");
+
+console.log(test);
+
+
+function compterVoyelles(chaine) {
+    const voyelles = "aeiouyAEIOUY";
+    let compteur = 0;
+    
+    for (let letter of chaine) {
+        if (voyelles.includes(letter)) {
+            compteur++;
+        }
+    }
+    return compteur;
+}
+
+let test2 = compterVoyelles("soleil");
+
+console.log(test2);
 
 // EXO 6 : Filtrer les nombres pair d'un tableau
 
@@ -206,3 +289,5 @@ console.log(estTrie2([1, 2, 3, 4]));
 console.log(estTrie2([5, 2, 6, 4]));
 console.log(estTrie2(["soleil", "lune", "arbre", "zen"]));
 console.log(estTrie2(["Arbre", "Balançoire", "cadeau"]));
+
+
