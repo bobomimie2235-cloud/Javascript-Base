@@ -1,4 +1,8 @@
+// exercice-js-bases
+console.error("exercice-js-bases");
+
 // EX 01 Définir variable
+console.warn("Exo 1 - définir variable");
 
 let nom = "Martin";
 let anneeNaissance = 2000;
@@ -6,6 +10,7 @@ let anneeNaissance = 2000;
 console.log(("Bonjour Mr"), (nom), ("vous avez"), (anneeNaissance), ("ans"));
 
 // EX 02 Variable Note
+console.warn("Exo 2 - Variable Note");
 
 let note_maths = 15;
 let note_français = 12;
@@ -13,7 +18,8 @@ let note_HG = 9;
 
 console.log(("la moyenne est de"), ((note_maths + note_français + note_HG) / 3), ("/20"));
 
-// EX 03 : variable sexe
+// EX 03 : variable Genre
+console.warn("Exo 3 - Variable Genre");
 
 let sexe = "M";
 
@@ -25,6 +31,7 @@ else {
 }
 
 // EX 04 : Definir matin ou soir
+console.warn("Exo 4 - Matin ou soir");
 
 let heure = 8;
 
@@ -39,6 +46,7 @@ else {
 }
 
 // EX 05 : variable choix
+console.warn("Exo 5 - Variable choix");
 
 let choix = 2;
 
@@ -57,6 +65,7 @@ else {
 }
 
 // EX 06 : expression conditionnelle
+console.warn("Exo 6 - Expression conditionnelle");
 
 let nombre = 30;
 
@@ -69,18 +78,21 @@ else {
 }
 
 // EX 07 : Boucle
+console.warn("Exo 7 - Boucle département");
 
 // for(let departement=44000; departement < 44999;departement=departement+1) {
 //     console.log("departement",departement)
 // }
 
 // EX 08 : Valeur afficher et incrémenter
+console.warn("Exo 8 - Valeur afficher et incrémenter");
 
 for (let age = 0; age <= 20; age = age + 2) {
     console.log("j'ai", age)
 }
 
 // EX 09 : Suite logique pair et impair
+console.warn("Exo 9 - Suite logique pair et impair");
 
 // const x = Math.floor(Math.random() * 10);
 // let found = false
@@ -168,59 +180,61 @@ console.log(tirageAleatoire(1, 100));
 
 
 // EXO 10 : tirages aléatoires / Compter le nombre de tirage pour obtenir condition / Arrêter tirage / Afficher nombre de coups
+console.warn("Exo 10 - Tirages aléatoire");
 
 // Script avec while tant que la condition:
 
-let n10 = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
+// let n10 = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
 
-function n10Aleatoire(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// function n10Aleatoire(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-function tirage10Aleatoire(min, max) {
-    const tirages10 = [];
+// function tirage10Aleatoire(min, max) {
+//     const tirages10 = [];
 
-    while (true) {
-        const n = n10Aleatoire(min, max);
-        tirages10.push(n);
+//     while (true) {
+//         const n = n10Aleatoire(min, max);
+//         tirages10.push(n);
 
-        if (n === n10) 
-            {
-            break;
-        }
+//         if (n === n10) 
+//             {
+//             break;
+//         }
 
-    }
-    return tirages10;
-}
+//     }
+//     return tirages10;
+// }
 
-console.log(tirage10Aleatoire(1, 999));
+// console.log(tirage10Aleatoire(1, 999));
 
 // Script avec FOR jusqu'à ce que la condition:
 
-let n10for = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
+// let n10for = parseInt(prompt("choisir un nombre de 3 chiffres ?", 100), 10);
 
-function n10A(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// function n10A(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-function t10A(min, max) {
-    const t10 = [];
+// function t10A(min, max) {
+//     const t10 = [];
 
-    let tirage;
+//     let tirage;
 
-    do {
-        tirage = n10A(min, max);
-        console.log(tirage);
-        t10.push(tirage);
-    } while (tirage !== n10for);
+//     do {
+//         tirage = n10A(min, max);
+//         console.log(tirage);
+//         t10.push(tirage);
+//     } while (tirage !== n10for);
 
-    return t10;
-}
+//     return t10;
+// }
 
-console.log(t10A(1, 999));
+// console.log(t10A(1, 999));
 
 
 // EXO 11 DATE et HEURE
+console.warn("Exo 11 - Date et heure");
 
 const maintenant = new Date();
 

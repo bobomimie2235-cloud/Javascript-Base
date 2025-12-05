@@ -1,4 +1,5 @@
 // EXO 1 : Base tableau
+console.warn("Exo 1 - déclarer un tableau");
 
 const n1 = [1, 2, 3, 4, 5];
 
@@ -6,19 +7,14 @@ for(let index =0; index < n1.length; index++) {
     console.log(n1[index]);
 }
 
-// EXO 1 : déclarer un tableau
-
-// const nombres = [1, 2, 3, 4, 5];
-
-// for(let i = 0;i < nombres.length; i++) {
-// console.log(nombres[i])
-// }
+// Boucle for...of
 
 // for(const element of nombres) {
 //     console.log(element)
 // }
 
 // EXO 2 : Calculer la somme des elements d'un tableau
+console.warn("Exo 2 - calculer la somme des éléments d'un tableau");
 
 const n2 = [10, 22, 33, 44, 55];
 let total = 0;
@@ -41,19 +37,21 @@ for(const el of n2) {
 }
 
 // EXO 2 : calculer la somme des éléments d'un tableau
+console.warn("Exo 2 - calculer la somme des éléments d'un tableau");
 
-// function sommeTableau(tableau) {
-//     let result = 0;
+function sommeTableau(tableau) {
+    let result = 0;
 
-//     for(const nombre of tableau) {
-//         result += nombre;
-//     }
-//     return result;
-//     }
+    for(const nombre of tableau) {
+        result += nombre;
+    }
+    return result;
+    }
 
-// console.log(sommeTableau([1, 2, 3, 4, 5]));
+console.log(sommeTableau([1, 2, 3, 4, 5]));
 
 // EXO 3 : Trouver le mot le plus long dans un tableau
+console.warn("Exo 3 - Trouver le mot le plus long dans un tableau");
 
 const tableauMots = ["journée", "soleil", "zen", "paix", "saperlipopette"]
 
@@ -68,6 +66,7 @@ for (let i=0; i < tableauMots.length; i++) {
 console.log("Le mot le plus long est :", motPlusLong);
 
 // EXO 4 : Inverser une chaine de caractere
+console.warn("Exo 4 - Inverser une chaîne de caractères");
 
 // TRI ORDRE ALPHABETIQUE
 
@@ -97,6 +96,7 @@ console.log(inverserChaine("stade"));
 // }
 
 // Exercice 4  Inverser une chaîne de caractères
+console.warn("Exo 4 - Inverser une chaîne de caractères");
 //  Écrivez une fonction 
 // inverserChaine(chaine) qui prend une chaîne de caractères 
 // et retourne la chaîne inversée en utilisant une boucle.
@@ -117,6 +117,7 @@ function inverserChaine(chaine) {
 console.log(inverserChaine("framboise"));
 
 // EXO 5 : Compter le nombre de voyelle dans une chaine
+console.warn("Exo 5 - Compter le nombre de voyelles dans une chaîne");
 
 function compterVoyelles(chaine5) {
     let compteur5 = "";
@@ -133,6 +134,7 @@ function compterVoyelles(chaine5) {
 console.log(compterVoyelles("Saperlotte Informatique"));
 
 // Exercice 5  Compter le nombre de voyelles dans une chaîne
+console.warn("Exo 5 - Compter le nombre de voyelles dans une chaîne");
 //  Créez une fonction 
 // compterVoyelles(chaine) qui retourne le nombre de voyelles 
 // dans une chaîne de caractères.
@@ -171,6 +173,7 @@ let test2 = compterVoyelles("soleil");
 console.log(test2);
 
 // EXO 6 : Filtrer les nombres pair d'un tableau
+console.warn("Exo 6 - Filtrer les nombres pair d'un tableau");
 
 function nombresPairs(tableau) {
     let resultat6 = [];
@@ -185,6 +188,7 @@ return resultat6; }
 console.log(nombresPairs([42, 56, 45, 23, 1, 2, 3, 4, 5]));
 
 // EXO 7 : Compter les propriétés d'un tableau
+console.warn("Exo 7 - Compter les propriétés d'un tableau");
 
 function compterProprietes(objet) {
     let compteur7 = 0;
@@ -204,6 +208,7 @@ const objet1 = {
 console.log(compterProprietes(objet1));
 
 // EXO 8 : Convertir un tableau d'objets en un tableau de valeurs
+console.warn("Exo 8 - Convertir un tableau d'objets en un tableau de valeurs");
 
 let produits = [
     {nom: "stylo", prix: 2},
@@ -223,6 +228,7 @@ function extraireNoms(produits) {
 console.log(extraireNoms(produits));
 
 // EXO 9 : Calculer la factorielle d'un nombre
+console.warn("Exo 9 - Calculer la factorielle d'un nombre");
 
 // Version boucle FOR
 
@@ -263,6 +269,7 @@ function factorielle(n) {
 console.log(factorielle(4));
 
 // EXO 10 : Verifier si un tableau est trié en ordre croissant
+console.warn("Exo 10 - Verifier si un tableau est trié en ordre croissant");
 
 function estTrie(tableau) {
 for (let i = 0; i < tableau.length - 1; i++) {

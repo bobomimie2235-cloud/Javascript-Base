@@ -1,21 +1,25 @@
+console.error("JS - Condition, boucles, objets et tableaux-1");
+
 // EXO 1 : compter les multiples de 3 et 5
+console.warn("Exo 1 - Multiples de 3 et 5");
 
-// const multiples = [];
-// const multiplesoff = [];
+const multiples = [];
+const multiplesoff = [];
 
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 3 === 0 || i % 5 === 0) {
-// multiples.push(i);
-//     } else {
-//         multiplesoff.push("!" + i)
-// }
-// }
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+multiples.push(i);
+    } else {
+        multiplesoff.push("!" + i)
+}
+}
 
-// console.log(multiples, "il y a ", multiples.length, " nombres");
-// console.log(multiplesoff);
+console.log(multiples, "il y a ", multiples.length, " nombres");
+console.log(multiplesoff);
 
 
 //  Exercice 2 – Filtrer les notes valides
+console.warn("Exo 2 - Filtrer les notes valides");
 //  Objectifs : boucle while , condition  && , opérateur ! , méthode   Déclare 
 // push
 //  const notes = 15, 3, 12, 0, 19, 22, 8 et un tableau vide  valides .
@@ -70,6 +74,7 @@ console.log("Nombre d'éléments écartés : ", notes.length - valides.length);
 
 
 // EXO 3 : Parcourir un objet utilisateur :
+console.warn("Exo 3 - Filtrer les notes valides");
 
 const users = {
     alice: 18,
@@ -93,6 +98,7 @@ for (let nom in users) {
 console.log("Total accès accordés :", accessValide);
 
 // EXO 4 : Addition sélective dans un tableau
+console.warn("Exo 4 - Addition sélective dans un tableau");
 
 const nombres = [2, 7, 10, 21, 14, 3];
 const resultats = [];
@@ -110,6 +116,7 @@ for (let nombre of nombres) {
 console.log("les nombres valide sont : ", resultat, "la somme est : ", somme);
 
 // EXO 5 : Inventaire en boucle while
+console.warn("Exo 5 - Inventaire boucle while");
 
 const stock = {pommes:4, bananes:0, poires:3, mangues:1};
 
@@ -129,6 +136,7 @@ console.log("Fruits en rupture ", rupture);
 
 
 // EXO 6 : Tableau de nombre aléatoire / Boucle for, push, || et !
+console.warn("Exo 6 - Tableau nombre aléatoire");
 
 const nums = [];
 
@@ -152,6 +160,7 @@ console.log(nums)
 
 
 // EXO 7 : compter les propriétés d'un objet
+console.warn("Exo 7 - Compter les propriétés d'un objet");
 
 const voiture = {
     marque: "toyota",
